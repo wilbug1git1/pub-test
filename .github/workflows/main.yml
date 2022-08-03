@@ -26,12 +26,6 @@ jobs:
           5.0.x
           6.0.x
     
-    # PSRules
-    - name: PSRules Analyze Azure template files
-      uses: microsoft/ps-rule@v2.1.0
-      with:
-        modules: 'PSRule.Rules.Azure'
-    
     # Run analyzers
     - name: Run Microsoft Security DevOps Analysis
       uses: microsoft/security-devops-action@preview
